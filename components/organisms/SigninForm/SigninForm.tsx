@@ -11,7 +11,7 @@ export const SigninForm = () => {
 			</h1>
 			<form className="mt-8">
 				<span className="absolute top-0 right-0 p-6">
-					Don't have an account?{" "}
+					Don&apos;t have an account?{" "}
 					<Link href="/signup" passHref>
 						<a className="text-primary-500 hover:text-primary-400 active:text-primary-600 transition">
 							Sign up
