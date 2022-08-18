@@ -1,11 +1,11 @@
 import { AuthForm, AuthLayout } from "../components/layouts";
 
-const Signin = () => {
+const Signup = () => {
 	return (
 		<AuthLayout>
-			<AuthForm view="signin" />
+			<AuthForm view="signup" />
 		</AuthLayout>
 	);
 };
 
-export default Signin;
+export default Signup;

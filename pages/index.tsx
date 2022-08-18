@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "../components/atoms";
-import { Container, Layout, Navbar, Section } from "../components";
+import { Container, Layout, Section } from "../components/layouts";
 
 const Home: NextPage = () => {
 	return (
@@ -17,26 +17,25 @@ const Home: NextPage = () => {
 			<main className="">
 				<Section>
 					<Container>
-						<h1 className="text-6xl font-bold">
-							Welcome to{" "}
-							<a href="https://github.com/milovangudelj/doyourthing">
-								DoYourThing!
-							</a>
-						</h1>
-						<p className="text-lg mt-4 max-w-[45ch]">
-							A script that installs for you all your programs and
-							packages as well as some system configurations that you
-							define.
-						</p>
-						<Button>
-							<a
-								href="https://github.com/milovangudelj/doyourthing"
-								target="_blank"
-								rel="noreferrer noopener"
-							>
-								Learn more
-							</a>
-						</Button>
+						<div className="flex justify-between items-center py-32">
+							<div className="max-w-[600px] space-y-8">
+								<h1 className="text-6xl font-medium leading-[72px] tracking-[-0.02em]">
+									Fresh OS installs have never been easier.
+								</h1>
+								<p className="text-lg text-light-me">
+									Set up your system configuration once and never worry
+									about it again. No need for complicated scripts and
+									many hours of typing.
+								</p>
+								<Button>
+									<Link href="/signup">Get started</Link>
+								</Button>
+							</div>
+							<div className="bg-zync-700 [transform-style:preserve-3d;] rounded-lg h-[400px] w-[600px] leading-none flex items-center justify-center text-light-le border border-zync-600">
+								<span>Terminal example screenshot</span>
+								<div className="absolute [transform:translateZ(-1px)] h-[437px] w-[617px] bg-accent-500/20 rounded-[100%] blur-xl"></div>
+							</div>
+						</div>
 					</Container>
 				</Section>
 			</main>

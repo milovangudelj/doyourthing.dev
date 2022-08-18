@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Container } from "../";
+
+import { Container } from "../../layouts";
 
 export const Footer = () => {
 	return (

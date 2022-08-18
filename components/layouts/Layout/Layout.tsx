@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "../";
+import { Navbar, Footer } from "../../organisms";
 
 export const Layout = ({ children }: { children: any }) => {
 	return (

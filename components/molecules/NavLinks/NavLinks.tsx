@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { NavLink } from "../../atoms";
 
 const links = [
@@ -19,11 +20,18 @@ const links = [
 ];
 
 export const NavLinks = () => {
+	const { pathname } = useRouter();
+
 	return (
 		<ul className="flex space-x-2">
 			{links.map((link) => {
 				return (
-					<NavLink key={link.id} target={link.target} label={link.label} />
+					<NavLink
+						key={link.id}
+						target={link.target}
+						label={link.label}
+						active={pathname === link.target}
+					/>
 				);
 			})}
 		</ul>

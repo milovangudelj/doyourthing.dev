@@ -80,7 +80,12 @@ module.exports = {
 			white: "#ffffff",
 			transparent: "transparent",
 		},
-		extend: {},
+		extend: {
+			backgroundImage: {
+				"unsplash-random":
+					"url('https://source.unsplash.com/random/?desk-setup')",
+			},
+		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/forms")],
 };

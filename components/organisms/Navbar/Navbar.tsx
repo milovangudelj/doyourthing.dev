@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 // Components
-import { Button, Logo } from "../atoms";
-import { NavLinks } from "../molecules";
-import { Container } from "../";
+import { Button, Logo } from "../../atoms";
+import { NavLinks } from "../../molecules";
+import { Container } from "../../layouts";
 
 export const Navbar = () => {
 	return (
-		<div className="py-4 border-b border-light-le">
+		<div className="py-4 border-b border-light-le sticky top-0 bg-zync-900/75 backdrop-blur-sm">
 			<Container className="flex items-center justify-between">
 				<nav className="flex items-center space-x-8">
 					<Link href="/">
@@ -17,7 +17,7 @@ export const Navbar = () => {
 					</Link>
 					<NavLinks />
 				</nav>
-				<Button>
+				<Button type="outlined">
 					<Link href="/signin">Sign in</Link>
 				</Button>
 			</Container>

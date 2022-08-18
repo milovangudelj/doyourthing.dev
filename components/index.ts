@@ -4,13 +4,12 @@ export * from "./atoms";
 
 // Molecules
 
+export * from "./molecules";
+
 // Organisms
 
-export * from "./Navbar";
-export * from "./Layout";
+export * from "./organisms";
 
 // Layouts
 
-export * from "./Container";
-export * from "./Section";
-export * from "./Footer";
+export * from "./layouts";
