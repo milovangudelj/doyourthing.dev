@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { Button } from "../components/atoms";
 import { Container, Layout, Section } from "../components/layouts";
+import { APP_BASE_URL } from "../utils/variables";
 
 const Home: NextPage = () => {
 	return (
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
 									many hours of typing.
 								</p>
 								<Button>
-									<Link href="/signup">Get started</Link>
+									<a href={`${APP_BASE_URL}/signup`}>Get started</a>
 								</Button>
 							</div>
 							<div className="bg-zync-700 [transform-style:preserve-3d;] rounded-lg h-[400px] w-[600px] leading-none flex items-center justify-center text-light-le border border-zync-600">

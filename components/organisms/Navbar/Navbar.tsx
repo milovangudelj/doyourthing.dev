@@ -5,6 +5,8 @@ import { Button, Logo } from "../../atoms";
 import { NavLinks } from "../../molecules";
 import { Container } from "../../layouts";
 
+import { APP_BASE_URL } from "../../../utils/variables";
+
 export const Navbar = () => {
 	return (
 		<div className="py-4 border-b border-light-le sticky top-0 bg-zync-900/75 backdrop-blur-sm">
@@ -18,7 +20,7 @@ export const Navbar = () => {
 					<NavLinks />
 				</nav>
 				<Button type="outlined">
-					<Link href="/signin">Sign in</Link>
+					<a href={`${APP_BASE_URL}/signin`}>Sign in</a>
 				</Button>
 			</Container>
 		</div>
