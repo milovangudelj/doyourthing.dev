@@ -17,9 +17,11 @@ export const Layout = ({ children }: { children: any }) => {
 				/>
 				<p>Sorry! The project has been paused for the time being.</p>
 			</div>
-			{/* <Navbar />
+			{/* 
+			<Navbar />
 			{children}
-			<Footer /> */}
+			<Footer />
+			 */}
 		</div>
 	);
 };
